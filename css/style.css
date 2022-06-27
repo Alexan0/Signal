@@ -290,7 +290,7 @@ body.lock {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: calc(15px + 5 * ((100vw - 320px) / 1600));
-  font-sizw: calc(13px + 1 * ((100vw - 320px) / 1600));
+  font-size: calc(13px + 1 * ((100vw - 320px) / 1600));
   color: #151515;
 }
 
@@ -892,7 +892,7 @@ body.lock {
   text-transform: uppercase;
   color: #F2F2F2;
   margin-bottom: calc(15px + 5 * ((100vw - 320px) / 1600));
-  font-sizw: calc(13px + 1 * ((100vw - 320px) / 1600));
+  font-size: calc(13px + 1 * ((100vw - 320px) / 1600));
 }
 
 .info-contacts__column {
@@ -902,7 +902,7 @@ body.lock {
 .info-contacts__text {
   line-height: 1.3125em;
   color: #B9B9B9;
-  font-sizw: calc(12px + 2 * ((100vw - 320px) / 1600));
+  font-size: calc(12px + 2 * ((100vw - 320px) / 1600));
 }
 
 @media (min-width: 61.99875em) {
