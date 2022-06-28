@@ -630,6 +630,75 @@ body.lock {
   left: 0;
 }
 
+.marquee {
+  margin-bottom: calc(40px + 60 * ((100vw - 320px) / 1600));
+}
+
+.marquee__black {
+  max-width: 100%;
+  transform: rotate(3deg) translateY(100%);
+  position: relative;
+  z-index: 3;
+}
+
+.marquee__white {
+  max-width: 100%;
+  transform: rotate(-3deg);
+}
+
+.black-marquee__content {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: calc(20px + 25 * ((100vw - 320px) / 1600));
+       column-gap: calc(20px + 25 * ((100vw - 320px) / 1600));
+  -webkit-animation: marquee-content 5s linear infinite;
+          animation: marquee-content 5s linear infinite;
+  padding: 0.625em 0;
+  width: 200%;
+}
+
+.black-marquee__item {
+  width: 100%;
+}
+
+.white-marquee__content {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.625em 0;
+  -moz-column-gap: calc(20px + 25 * ((100vw - 320px) / 1600));
+       column-gap: calc(20px + 25 * ((100vw - 320px) / 1600));
+  -webkit-animation: marquee-content 5s linear infinite;
+          animation: marquee-content 5s linear infinite;
+  border: 1px solid #3E3737;
+  width: 200%;
+}
+
+.white-marquee__item {
+  width: 100%;
+}
+
+@-webkit-keyframes marquee-content {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-content {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .services__content {
   display: flex;
   justify-content: space-between;
@@ -917,6 +986,16 @@ body.lock {
   .menu-footer__link:hover {
     color: #F41240;
   }
+
+  .marquee__black:hover .black-marquee__content {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+
+  .marquee__white:hover .white-marquee__content {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
 }
 
 @media (max-width: 1375px) {
@@ -1114,6 +1193,18 @@ body.lock {
     margin: 1.125em 0px 0px 0px;
   }
 
+  .marquee {
+    margin-bottom: calc(100px + 20 * ((100vw - 320px) / 1600));
+  }
+
+  .marquee__black {
+    transform: rotate(4deg) translateY(100%);
+  }
+
+  .marquee__white {
+    transform: rotate(-4deg);
+  }
+
   .services__content {
     -moz-column-gap: 0;
          column-gap: 0;
@@ -1152,6 +1243,14 @@ body.lock {
 
   .slider-clips__info {
     left: 30px;
+  }
+
+  .marquee__black {
+    transform: rotate(5deg) translateY(100%);
+  }
+
+  .marquee__white {
+    transform: rotate(-5deg);
   }
 
   .item-services {
