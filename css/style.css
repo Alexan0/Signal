@@ -97,8 +97,6 @@ body {
 body.lock {
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
-  touch-action: none;
-  -ms-touch-action: none;
 }
 
 .container {
