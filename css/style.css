@@ -96,8 +96,6 @@ body {
 
 body.lock {
   overflow: hidden;
-  touch-action: none;
-  -ms-touch-action: none;
 }
 
 .container {
@@ -1244,6 +1242,12 @@ body.lock {
 }
 
 @media (max-width: 29.99875em) {
+  .wrapper.lock {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+
   .form-popup {
     width: 14.8125em;
   }
