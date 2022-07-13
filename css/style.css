@@ -96,6 +96,9 @@ body {
 
 body.lock {
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  touch-action: none;
+  -ms-touch-action: none;
 }
 
 .container {
@@ -366,7 +369,7 @@ body.lock {
   transition: all 0.3s ease 0s;
 }
 
-.header__burger {
+.icon-menu {
   display: none;
 }
 
@@ -374,17 +377,17 @@ body.lock {
   top: 0;
 }
 
-.header__burger.active span:nth-of-type(1) {
+.icon-menu.active span:nth-of-type(1) {
   transform: rotate3d(0, 0, 1, 45deg);
   top: 9px;
   width: 20px;
 }
 
-.header__burger.active span:nth-of-type(2) {
+.icon-menu.active span:nth-of-type(2) {
   transform: scale(0);
 }
 
-.header__burger.active span:nth-of-type(3) {
+.icon-menu.active span:nth-of-type(3) {
   transform: rotate3d(0, 0, 1, -45deg);
   bottom: 9px;
 }
@@ -1123,7 +1126,7 @@ body.lock {
     letter-spacing: 0.01em;
   }
 
-  .header__burger {
+  .icon-menu {
     display: block;
     position: relative;
     width: 30px;
@@ -1131,7 +1134,7 @@ body.lock {
     z-index: 5;
   }
 
-  .header__burger span:nth-of-type(1) {
+  .icon-menu span:nth-of-type(1) {
     background-color: #000;
     position: absolute;
     width: 15px;
@@ -1140,7 +1143,7 @@ body.lock {
     transition: all 0.3s ease;
   }
 
-  .header__burger span:nth-of-type(2) {
+  .icon-menu span:nth-of-type(2) {
     background-color: #000;
     position: absolute;
     width: 17px;
@@ -1150,7 +1153,7 @@ body.lock {
     transition: all 0.3s ease;
   }
 
-  .header__burger span:nth-of-type(3) {
+  .icon-menu span:nth-of-type(3) {
     background-color: #000;
     position: absolute;
     width: 20px;
